@@ -1,0 +1,92 @@
+.Header {
+    position: relative;
+    width: 100%;
+    padding-block: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Header__logo {
+    border: none;
+    background-color: transparent;
+}
+.Header__buttons-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.Header__desktop {
+    display: none;
+}
+.Header__title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+@media screen and (min-width: 700px) {
+    .Header__buttons-container {
+        display: none;
+   }
+    .Header__desktop {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-end;
+   }
+    .Header__desktop--filter {
+        width: 100%;
+        text-align: center;
+   }
+    .Header__search-field {
+        display: flex;
+        align-items: center;
+        border: 1px solid #bbb;
+        border-radius: 9px;
+        padding: 6px;
+        margin-right: 15px;
+   }
+    .Header__search-field label {
+        display: grid;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+   }
+    .Header__search-field input {
+        width: 200px;
+        border: none;
+        outline: none;
+        font-size: 1.1rem;
+   }
+    .Header__cart {
+        position: relative;
+        background-color: #66BFF1;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        border-radius: 9px;
+        color: white;
+        letter-spacing: 0.5px;
+        font-size: 1.2rem;
+   }
+    .Header__cart span {
+        margin-right: 5px;
+   }
+    .Header__cart--notification {
+        position: absolute;
+        top: -7px;
+        right: -7px;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #FFA4D8;
+   }
+}

@@ -1,0 +1,36 @@
+.Button-category {
+  display: none;
+  padding: 6px;
+  margin: 0 7px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  border: 1px solid #bbb;
+  border-radius: 9px;
+}
+@media screen and (min-width: 700px) {
+  .Button-category {
+    display: inherit;
+ }
+}
+.chosen {
+  background-color: #bbb;
+  font-weight: 600;
+  color: white;
+}
+
+
+.CheckoutInput {
+  display: flex;
+  flex-direction: column;
+}
+.CheckoutInput label {
+  font-size: 1.5rem;
+  margin-bottom: 9px;
+}
+.CheckoutInput input, .CheckoutInput select {
+  padding: 9px;
+  font-size: 1.2rem;
+  border-radius: 9px;
+  border: 1px solid #bbb;
+}

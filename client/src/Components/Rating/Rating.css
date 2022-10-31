@@ -1,0 +1,12 @@
+.Rating {
+  display: flex;
+  align-items: flex-end;
+  padding-block: 5px;
+}
+.Rating__grade {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+.Rating__logo {
+  width: 20px;
+}

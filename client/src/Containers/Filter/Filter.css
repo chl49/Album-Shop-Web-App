@@ -1,0 +1,17 @@
+.Filter__dropdown {
+  width: 216px;
+  padding: 9px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+}
+@media screen and (min-width: 700px) {
+  .Filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10px;
+ }
+  .Filter__dropdown {
+    display: none;
+ }
+}

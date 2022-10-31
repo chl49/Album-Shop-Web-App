@@ -1,0 +1,50 @@
+.Menu {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  background-color: #e2e2e2;
+}
+.Menu__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-block: 15px;
+  text-decoration: none;
+}
+.Menu__title {
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.Menu__arrow-right {
+  display: block;
+  transform: rotate(-180deg);
+}
+.Menu__buttons {
+  display: flex;
+  align-items: center;
+}
+.Menu__notification {
+  display: grid;
+  place-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #5bb166;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+.Menu__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding-block: 20px;
+  border-top: 1px solid #bbb;
+}

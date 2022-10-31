@@ -1,0 +1,43 @@
+
+@import "./Pages/Home/Home.css";
+@import "./Pages/Menu/Menu.css";
+@import "./Pages/Cart/Cart.css";
+@import "./Pages/Product/Product.css";
+@import "./Pages/Checkout/Checkout.css";
+@import "./Containers/Header/Header.css";
+@import "./Containers/Filter/Filter.css";
+@import "./Containers/Skeleton/Skeleton.css";
+@import "./Components/SearchInput/SearchInput.css";
+@import "./Components/ButtonCTA/ButtonCTA.css";
+@import "./Components/Item/Item.css";
+@import "./Components/ButtonSmall/ButtonSmall.css";
+@import "./Components/Loader/Loader.css";
+@import "./Components/Product/Product.css";
+@import "./Components/CheckoutInput/CheckoutInput.css";
+@import "./Components/CategorySelect/CategorySelect.css";
+@import "./Components/LabelSelect/LabelSelect.css";
+
+ * {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-size: 62.5%;
+	 color: white;
+	 background-color: black;
+}
+ #root {
+	 position: relative;
+	 min-height: 100vh;
+}
+ .App {
+	 width: 90%;
+	 max-width: 1200px;
+	 margin: 0 auto;
+	 font-size: 1.6rem;
+	 
+	 
+}
+ 
