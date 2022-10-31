@@ -112,14 +112,14 @@ export function reducer(state: StateInterface, action: ActionType): StateInterfa
       state.filteredItems = payload === "All items" ? state.items : labelStateItems.filter(item => item.category === payload)
       state.categoryFilter = payload as string
       //return{ ...state, filterAt: payload as string }
-      return{ ...state, filterAt: payload as string}
+      return{ ...state, categoryFilter: payload as string}
 
     case "FILTER_LABEL":
       let categoryStateItems = state.categoryFilter === "All items" ? state.items : state.items.filter(item => item.category === state.categoryFilter)
       //state.filteredItems = payload === "All items" ? state.items : state.items.filter(item => item.label === payload)
       state.filteredItems = payload === "All items" ? state.items : categoryStateItems.filter(item => item.label === payload)
       state.labelFilter = payload as string
-      return{ ...state, filterAt: payload as string}
+      return{ ...state, labelFilter: payload as string}
 
     case "ADD_INITIAL_ITEMS":
       (payload as ItemInterface[]).forEach((product: ItemInterface) => {

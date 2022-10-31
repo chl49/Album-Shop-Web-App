@@ -102,10 +102,6 @@ export const Header: React.FC<HeaderProps> = ({ dispatch }): JSX.Element => {
               </Fragment>
             ) : (
               <div className="Header__desktop--filter">
-                <Filter
-                  dispatch={dispatch}
-                  isInHeader={true}
-                />
               </div>
             )}
 

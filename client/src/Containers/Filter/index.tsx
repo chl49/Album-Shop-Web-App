@@ -6,7 +6,13 @@ import { LabelSelect } from "../../Components/LabelSelect";
 
 export const Filter: React.FC<FilterProps> = ({ dispatch, isInHeader }): JSX.Element => {
   const state = useContext(Ctx)
-  const { categories, labels, filterAt, searching } = state
+  const { categories, labels, searching } = state
+  const handleLoad = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    dispatch({ type: "FILTER", payload: "All items" })
+  }
+  const handleLoad2 = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    dispatch({ type: "FILTER", payload: "All items" })
+  }
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     dispatch({ type: "FILTER_CATEGORY", payload: e.target.value })
   }
@@ -16,7 +22,7 @@ export const Filter: React.FC<FilterProps> = ({ dispatch, isInHeader }): JSX.Ele
 
   return(
     <section className="Filter">
-      <select defaultValue={searching ? "All items" : filterAt} className="Filter__dropdown" onChange={handleChange}>
+      <select defaultValue={searching ? "All items" : state.categoryFilter} className="Filter__dropdown" onChange={handleChange}>
         {categories.map(category => (
           <option value={category} key={category}>
             {category}
@@ -28,7 +34,7 @@ export const Filter: React.FC<FilterProps> = ({ dispatch, isInHeader }): JSX.Ele
           dispatch={dispatch}
           to={isInHeader ? "/" : ""}
       />
-      <select defaultValue={searching ? "All items" : filterAt} className="Filter__dropdown" onChange={handleChange2}>
+      <select defaultValue={searching ? "All items" : state.labelFilter} className="Filter__dropdown" onChange={handleChange2}>
         {labels.map(label => (
           <option value={label} key={label}>
             {label}

@@ -15,6 +15,7 @@ export const Home: React.FC<PageProps> = ({ state, dispatch, ctx }): JSX.Element
             dispatch={dispatch as React.Dispatch<ActionType>}
           />
           <section className="Home__items">
+            
             {state.filteredItems.map(item => (
               <Item 
                 key={item.id}
